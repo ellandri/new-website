@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="styles.css">
+<link href="assets/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/solid.css">
+<link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/brands.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<div class="table" style="margin: 50px;">
+    <div class="section--title">
+        <h1 class="title">Professeurs</h1>
+        <i class="fa-solid fa-plus"><button style="border: none;"><a  href="ajout_prof.html">Ajouter professeur</a></button></i>
+        
+        <div></div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Classe</th>
+                <th>Matricule</th>
+                <th>Age</th>
+                <th>Télephone</th>
+                <th>Ville</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E1</td>
+                <td>N'DRI</td>
+                <td>Ahou Ella</td>
+                <td>Mp1</td>
+                <td>01255852588</td>
+                <td>25</td>
+                <td>0574328739</td>
+                <td>Abidjan</td>
+
+                <td><button type="submit" class="edit--button" ><a href="modif_prof.html">Modifier</a></button>
+                <button type="submit" class="cancel--button"onclick="confirmDelete()">Suprimer</button></td>
+            </tr>
+            <tr>
+                <td>E1</td>
+                <td>N'DRI</td>
+                <td>Ahou Ella</td>
+                <td>Mp1</td>
+                <td>01255852588</td>
+
+                <td>25</td>
+                <td>0574328739</td>
+                <td>Abidjan</td>
+                <td><button type="submit" class="edit--button" ><a href="modif_prof.html">Modifier</a></button>
+                    <button type="submit" class="cancel--button"onclick="confirmDelete()">Suprimer</button></td>
+
+            </tr>
+            <tr>
+                <td>E1</td>
+                <td>N'DRI</td>
+                <td>Ahou Ella</td>
+                <td>Mp1</td>
+                <td>01255852588</td>
+
+                <td>25</td>
+                <td>0574328739</td>
+                <td>Abidjan</td>
+                <td><button type="submit" class="edit--button" ><a href="modif_prof.html">Modifier</a></button>
+                    <button type="submit" class="cancel--button"onclick="confirmDelete()">Suprimer</button></td>
+
+            </tr>
+            <tr>
+                <td>E1</td>
+                <td>N'DRI</td>
+                <td>Ahou Ella</td>
+                <td>Mp1</td>
+                <td>01255852588</td>
+
+                <td>25</td>
+                <td>0574328739</td>
+                <td>Abidjan</td>
+                <td><button type="submit" class="edit--button" ><a href="modif_prof.html">Modifier</a></button>
+                    <button type="submit" class="cancel--button"onclick="confirmDelete()">Suprimer</button></td>
+
+            </tr>
+            <tr>
+                <td>E1</td>
+                <td>N'DRI</td>
+                <td>Ahou Ella</td>
+                <td>Mp1</td>
+                <td>01255852588</td>
+
+                <td>25</td>
+                <td>0574328739</td>
+                <td>Abidjan</td>
+                <td><button type="submit" class="edit--button" ><a href="modif_prof.html">Modifier</a></button>
+                    <button type="submit" class="cancel--button"onclick="confirmDelete()">Suprimer</button></td>
+
+
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function confirmDelete() {
+            Swal.fire({
+                title: 'Êtes-vous sûr ?',
+                text: "Vous ne pourrez pas annuler cette action !",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Oui, supprimez-le !'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Supprimé !',
+                        'Votre fichier a été supprimé.',
+                        'success'
+                    )
+                    // Code pour supprimer l'élément
+                }
+            })
+        }
+    </script>
