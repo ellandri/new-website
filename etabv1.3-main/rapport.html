@@ -1,0 +1,231 @@
+<!doctype html>
+		<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>Bienvenue</title>
+
+			 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+			<!-- font awesome cdn link -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<!-- custom css file link -->
+	
+	<link rel="stylesheet" href="style.css">
+								
+</head>
+
+<style>
+
+.oui {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.pdf {
+    background-color: #d9534f;
+}
+
+.excel {
+    background-color: #5cb85c;
+}
+
+.btn:hover {
+    opacity: 0.9;
+
+}
+
+</style>
+
+<body>
+    
+<!--navbar-->
+<div class="sidebar">
+    <div class="logo"></div>
+
+    <ul class="menu">
+    <li class="active">
+<a href="dashboard.html" >
+    <i class="fas fa-tachometer-alt"></i>
+    <span>Menu de bord</span>
+
+</a>
+
+    </li>
+
+    <li>
+        <a href="eleve.html">
+            <i class="fas fa-user"></i>
+            <span>Eleves</span>
+        
+</a>
+        
+</li>
+    <li>
+        <a href="professeur.html">
+        <i class="fas fa-chart-bar"></i>
+        <span>Professeur</span>
+                
+        </a>
+                
+</li>
+
+    <li>
+        <a href="utilisateur.html">
+        <i class="fas fa-briefcase"></i>
+        <span>Utilisateurs</span>
+                        
+        </a>
+                        
+</li>
+    <li>
+         <a href="rapport.html">
+        <i class="fas fa-question-circle"></i>
+         <span>Rapport</span>
+                                
+        </a>
+                                
+</li>
+        
+
+    <li class="logout">
+         <a href="connect.html">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Deconnexion</span>
+                                                        
+    </a>
+                                                        
+    </li>
+                                                        
+                                            
+    </ul>
+   </div> 
+
+   <div class="main--content">
+    <div class="header--wrapper">
+    <div class="header--title">
+        
+
+    </div>
+   <div class="user--info">
+    
+
+
+</div>
+    </div>
+
+
+
+
+
+<section class="oui">
+
+
+    <div class="container">
+        <h1>Rapport</h1>
+        <div class="form-container">
+            <div class="left-section">
+                <label for="select-option">Sélectionner une option:</label>
+                <select id="select-option">
+                    <option value="eleves">Liste des élèves</option>
+                    <option value="professeurs">Liste des professeurs</option>
+                    <option value="utilisateurs">Liste des utilisateurs</option>
+                </select>
+            </div>
+            <div class="right-section">
+                <button class="btn pdf">Générer format PDF</button>
+                <button class="btn excel">Générer format Excel</button>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<script src="code.js"></script>
+	
+	
+	
+	
+	
+
+</body>
+</html>

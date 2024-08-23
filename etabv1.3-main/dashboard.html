@@ -1,0 +1,149 @@
+<!doctype html>
+		<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>Bienvenue</title>
+
+			 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+			<!-- font awesome cdn link -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+           <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>--> 
+
+	<!-- custom css file link -->
+	
+	<link rel="stylesheet" href="style.css">
+								
+</head>
+
+<body>
+
+   
+    
+   
+    <div class="sidebar">
+        <div class="logo"></div>
+    
+        <ul class="menu">
+        <li class="active">
+    <a href="#" >
+        <i class="fas fa-tachometer-alt"></i>
+        <span>Menu de bord</span>
+    
+    </a>
+    
+        </li>
+    
+        <li>
+            <a href="eleve.html">
+                <i class="fas fa-user"></i>
+                <span>Eleves</span>
+            
+    </a>
+            
+    </li>
+        <li>
+            <a href="professeur.html">
+            <i class="fas fa-chart-bar"></i>
+            <span>Professeur</span>
+                    
+            </a>
+                    
+    </li>
+    
+        <li>
+            <a href="utilisateur.html">
+            <i class="fas fa-briefcase"></i>
+            <span>Utilisateurs</span>
+                            
+            </a>
+                            
+    </li>
+        <li>
+             <a href="rapport.html">
+            <i class="fas fa-question-circle"></i>
+             <span>Rapport</span>
+                                    
+            </a>
+                                    
+    </li>
+            
+    
+        <li class="logout">
+             <a href="connect.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Deconnexion</span>
+                                                            
+        </a>
+                                                            
+        </li>
+                                                            
+                                                
+        </ul>
+       </div> 
+    
+       <div class="main--content">
+        <div class="header--wrapper">
+        <div class="header--title">
+            
+        </div>
+       <div class="user--info">
+        
+    
+    
+    </div>
+        </div>
+
+<!-- A propos des articles ... section starts -->
+	
+<section class="tous" >
+	
+	<h1 class="heading">Tableau <span>de bord</span> </h1>
+		
+		<div class="tablebord">
+		
+		<div class="tables" id="total1">
+		
+			
+			<h3>Nombre d'élève</h3>
+		
+			
+            <h2>128 100</h2>
+		
+		</div>
+			
+		<div class="tables" id="total2">
+            <h3>Nombre de professeur</h3>
+		
+			
+            <h2>128 100</h2>
+		
+		
+		</div>
+		
+			
+		<div class="tables" id="total3">
+            <h3>Nombre d'utilisateur</h3>
+		
+            <h2>128 100</h2>
+		
+		</div>
+			
+			
+		<div class="tables" id="total4">
+            <h3>Eleve par genre</h3>
+            <canvas id="genderChart"></canvas>
+		</div>
+
+			
+			</div>
+		
+	
+	
+	</section>
+</div>
+
+<!--<script src="code.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/graph.js"></script>
+</body>
+</html>

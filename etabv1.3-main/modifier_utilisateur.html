@@ -1,0 +1,295 @@
+<!doctype html>
+		<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>Bienvenue</title>
+
+			 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+			<!-- font awesome cdn link -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<!-- custom css file link -->
+	
+	<link rel="stylesheet" href="style.css">
+								
+</head>
+
+<style>
+
+.grouper {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            margin: 0;
+        }
+
+        .form-container {
+           
+            padding: 10px;
+            padding-top: 100px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .form-container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .form-container p {
+            color: #ad1289;
+           text-align: right;
+           align-items: flex-start;
+           height: 30px;
+           
+     
+        }
+
+        .form-container a{
+    color: #ad1289;
+    text-decoration: none;
+}
+
+.form-container a:hover{
+    color:#2d2b98;
+  
+   
+}
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="date"]:focus,
+        .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-group .gender-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-group .gender-group label {
+            font-size: 16px;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group .gender-group input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .form-buttons button {
+            width: 48%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-buttons .cancel-button {
+            background-color: #d9534f;
+        }
+
+        .form-buttons .cancel-button:hover {
+            background-color: #c9302c;
+        }
+
+        .form-buttons .submit-button {
+            background-color: #5cb85c;
+        }
+
+        .form-buttons .submit-button:hover {
+            background-color: #4cae4c;
+        }
+
+</style>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo"></div>
+    
+        <ul class="menu">
+        <li class="active">
+    <a href="dashboard.html" >
+        <i class="fas fa-tachometer-alt"></i>
+        <span>Menu de bord</span>
+    
+    </a>
+    
+        </li>
+    
+        <li>
+            <a href="eleve.html">
+                <i class="fas fa-user"></i>
+                <span>Eleves</span>
+            
+    </a>
+            
+    </li>
+        <li>
+            <a href="professeur.html">
+            <i class="fas fa-chart-bar"></i>
+            <span>Professeur</span>
+                    
+            </a>
+                    
+    </li>
+    
+        <li>
+            <a href="utilisateur.html">
+            <i class="fas fa-briefcase"></i>
+            <span>Utilisateurs</span>
+                            
+            </a>
+                            
+    </li>
+        <li>
+             <a href="rapport.html">
+            <i class="fas fa-question-circle"></i>
+             <span>Rapport</span>
+                                    
+            </a>
+                                    
+    </li>
+            
+    
+        <li class="logout">
+             <a href="connect.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Deconnexion</span>
+                                                            
+        </a>
+                                                            
+        </li>
+                                                            
+                                                
+        </ul>
+       </div> 
+    
+       <div class="main--content">
+        <div class="header--wrapper">
+        <div class="header--title">
+            <span>Bienvenue</span>
+            <h2>Dashboard</h2>
+    
+        </div>
+       <div class="user--info">
+        <div class="search--box">
+        <i class="fas fa-search"></i>
+    <input type="text" placeholder="searh">
+    </div>
+    
+    
+    </div>
+        </div>
+
+
+
+
+
+
+
+
+<!--Formulaire -->
+	
+<section class="grouper">
+   
+            <div class="form-container">
+                <h1>Ajouter un utilisateur</h1>
+                <p> <a href="utilisateur.html">Retour <i class="	fas fa-arrow-circle-right"></i></a></p>
+                <form>
+                    <div class="form-group">
+                        <label for="pseudo"> </label>
+                        <input type="text" id="nom" placeholder="admin" name="pseudo">
+                    </div>
+                    <div class="form-group">
+                        <label for="mot de passe"> </label>
+                        <input type="text" id="prenom" placeholder="ancien mot de passe" name="ancien">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mot de passe"> </label>
+                        <input type="text" id="prenom" placeholder=" nouveau mot de passe" name="nouveau">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="confirmer"> </label>
+                        <input type="text" id="telephone" placeholder="confirmer mot de passe" name="confirm">
+                    </div>
+                   
+                    <div class="form-buttons">
+                        <button type="button" class="cancel-button">Annuler</button>
+                        <button type="submit" class="submit-button">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<script src="code.js"></script>
+	
+	
+	
+	
+	
+
+</body>
+</html>
